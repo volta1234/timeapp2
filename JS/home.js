@@ -33,7 +33,6 @@ function populateTimezones() {
     timezoneSelect.value = dayjs.tz.guess();
 }
 
-document.getElementById('refresh-button').addEventListener('click', updateDateTime);
 document.getElementById('timezone-select').addEventListener('change', function() {
     updateDateTime();
     document.getElementById('id01').style.display = "none";
@@ -42,4 +41,5 @@ document.getElementById('timezone-select').addEventListener('change', function()
 window.onload = () => {
     populateTimezones();
     updateDateTime();
+    setInterval(updateDateTime, 1000);
 };
