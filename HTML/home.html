@@ -30,7 +30,7 @@
                 </a>
 
                 <div class="navbar-item has-dropdown is-hoverable">
-                    
+
                 </div>
             </div>
 
@@ -53,13 +53,10 @@
             <div class="media">
                 <div class="media-content">
                     <div id="card2" class="card">
-                        <h1>Time App</h1>
-                        <div class="date-time">
-                            <h2>TIME</h2>
-                            <div><span id="time-zone"></span>
-                                <p id="current-datetime"></p>
-                            </div>
-                        </div>
+                        <h1 class="is-size-1-tablet has-text-primary-light">Time App</h1>
+                        <div class="is-size-3-tablet has-text-primary-75" id="timezone"></div>
+                        <div class="is-size-4-tablet has-text-primary-95" id="date"></div>
+                        <div class="is-size-1-tablet has-text-primary--15" id="time"></div>
                         <div id="id01" class="w3-modal">
                             <div class="w3-modal-content">
                                 <div class="w3-container">
@@ -68,14 +65,13 @@
                                     <div class="zonestyle">
                                         <select id="timezone-select" class="form-select form-select-lg mb-3"
                                             aria-label=".form-select-lg example">
-
                                         </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <p><button class="button is-success" onclick="document.getElementById('id01').style.display='block'"
-                                class="w3-button">Select
+                        <p><button class="button is-success"
+                                onclick="document.getElementById('id01').style.display='block'" class="w3-button">Select
                                 Timezone</button></p>
                     </div>
                 </div>
@@ -84,11 +80,11 @@
     </div>
     <footer class="footer">
         <div class="content has-text-centered">
-          <p>
-            <strong>Timer</strong> by <a href="https://jgthms.com">Calvince Ogwel</a>.
-          </p>
+            <p>
+                <strong>Timer</strong> by <a href="https://jgthms.com">Calvince Ogwel</a>.
+            </p>
         </div>
-      </footer>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/plugin/advancedFormat.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/plugin/utc.js"></script>

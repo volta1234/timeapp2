@@ -6,9 +6,13 @@ function updateDateTime() {
     const now = dayjs();
 
     const selectedTimezone = document.getElementById('timezone-select').value || dayjs.tz.guess();
-    document.getElementById('current-datetime').textContent = now.tz(selectedTimezone).format('YYYY-MM-DD HH:mm:ss');
-
-    document.getElementById('time-zone').textContent = selectedTimezone;
+    const formattedDateTime = now.tz(selectedTimezone).format('YYYY-MM-DD HH:mm:ss');
+    const date = formattedDateTime.split(' ')[0];
+    const time = formattedDateTime.split(' ')[1];
+    
+    document.getElementById('date').textContent = "Date:" + " " + date;
+    document.getElementById('time').textContent =  time;
+    document.getElementById('timezone').textContent = selectedTimezone;
 }
 
 function populateTimezones() {
@@ -33,9 +37,9 @@ function populateTimezones() {
     timezoneSelect.value = dayjs.tz.guess();
 }
 
-document.getElementById('timezone-select').addEventListener('change', function() {
+document.getElementById('timezone-select').addEventListener('change', function () {
+    document.getElementById('id01').style.display = "none"; 
     updateDateTime();
-    document.getElementById('id01').style.display = "none";
 });
 
 window.onload = () => {
