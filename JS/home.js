@@ -38,3 +38,4 @@ window.onload = () => {
     populateTimezones();
     updateDateTime();
 };
+
