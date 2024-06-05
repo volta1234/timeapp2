@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day.js Example</title>
+    <link rel="stylesheet" href="../CSS/time.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TIME APP</h1>
+        <div class="date-time">
+            <h2>TIME</h2>
+            <p id="current-datetime"></p>
+            <p>Time Zone: <span id="time-zone"></span></p>
+        </div>
+        <label for="timezone-select">Choose a timezone:</label>
+        <select id="timezone-select">
+        </select>
+        <button id="refresh-button">GET CURRENT TIME</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/plugin/advancedFormat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/plugin/utc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/plugin/timezone.js"></script>
+    <script src="../JS/time.js"></script>
+</body>
+</html>
