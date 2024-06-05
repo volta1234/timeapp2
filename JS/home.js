@@ -21,6 +21,8 @@ function populateTimezones() {
     ];
 
     const timezoneSelect = document.getElementById('timezone-select');
+    timezoneSelect.innerHTML = '';
+
     timezones.forEach(timezone => {
         const option = document.createElement('option');
         option.value = timezone;
@@ -32,10 +34,12 @@ function populateTimezones() {
 }
 
 document.getElementById('refresh-button').addEventListener('click', updateDateTime);
-document.getElementById('timezone-select').addEventListener('change', updateDateTime);
+document.getElementById('timezone-select').addEventListener('change', function() {
+    updateDateTime();
+    document.getElementById('id01').style.display = "none";
+});
 
 window.onload = () => {
     populateTimezones();
     updateDateTime();
 };
-

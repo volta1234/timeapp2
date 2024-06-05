@@ -43,20 +43,24 @@ body {
   background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
   background-size: cover;
-  font: 14px/20px "Lato", Arial, sans-serif;
+  font: 10px/15px "Lato", Arial, sans-serif;
   color: #9E9E9E;
   margin-top: 30px;
+  background-color: #fff;
+  
 }
 
 .slide-container {
   margin: auto;
   width: 600px;
   text-align: center;
+  
 }
 
 .wrapper {
   padding-top: 40px;
   padding-bottom: 40px;
+height: 50px !important;
 }
 
 .clash-card {
@@ -79,9 +83,9 @@ body {
   border-top-right-radius: 19px;
 }
 
-.clash-card__image--barbarian {
+/* .clash-card__image--barbarian {
   background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
-}
+} */
 
 .clash-card__level {
   text-transform: uppercase;
